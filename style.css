@@ -1,0 +1,305 @@
+/* Основные стили */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #1e1e1e, #282828);
+    color: #fff;
+}
+
+header {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 2rem;
+    color: #ff4500;
+    text-shadow: 0 0 10px #ff4500, 0 0 20px #ff6347;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff4500;
+}
+
+.neon-text {
+    font-size: 2rem;
+    text-align: center;
+    color: #ff4500;
+    text-shadow: 0 0 5px #ff4500, 0 0 10px #ff6347, 0 0 20px #ff4500;
+    margin-top: 20px;
+}
+
+.sub-text {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #aaa;
+}
+
+.games-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.game {
+    font-size: 1.5em;
+    color: #fff;
+    text-shadow: 0 0 5px #ff4500, 0 0 10px #ff4500, 0 0 20px #ff6347;
+    padding: 10px 20px;
+    background: rgba(255, 69, 0, 0.1);
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.game:hover {
+    transform: scale(1.1);
+    background: rgba(255, 69, 0, 0.2);
+}
+
+.news-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.news-container article {
+    background: rgba(40, 40, 40, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    color: #fff;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.news-container article:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 69, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Кнопка смены темы */
+button {
+    cursor: pointer;
+}
+
+.dark-theme {
+    background: linear-gradient(to bottom, #000, #333);
+    color: #ccc;
+}
+
+/* Анимация шариков */
+.floating-ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    animation: float 10s infinite ease-in-out;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Таймер */
+.countdown {
+    font-size: 1.2rem;
+    color: #ff4500;
+    text-shadow: 0 0 5px #ff4500, 0 0 10px #ff6347;
+}
+
+/* Эффект кнопки при наведении */
+button:hover {
+    background-color: #ff6347;
+    box-shadow: 0 0 10px #ff4500;
+}
+#account-section {
+    margin: 20px;
+    padding: 20px;
+    background: rgba(40, 40, 40, 0.8);
+    border-radius: 10px;
+}
+
+.account {
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ff4500;
+    border-radius: 5px;
+    background: rgba(255, 69, 0, 0.1);
+}
+
+.account button {
+    padding: 10px 15px;
+    background: #ff4500;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.account button:hover {
+    background: #ff6347;
+}
+
+#register-section {
+    margin: 20px;
+    padding: 20px;
+    background: rgba(40, 40, 40, 0.8);
+    border-radius: 10px;
+}
+
+#register-section input {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ff4500;
+    border-radius: 5px;
+    background: #1e1e1e;
+    color: #fff;
+}
+
+#register-section button {
+    padding: 10px 15px;
+    background: #ff4500;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#register-section button:hover {
+    background: #ff6347;
+}
+
+#account-settings {
+    text-align: center;
+}
+
+#account-settings button {
+    padding: 10px 15px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#account-settings button:hover {
+    background: #218838;
+}
+#register-section {
+    margin: 20px;
+    padding: 20px;
+    background: rgba(50, 50, 50, 0.8);
+    border-radius: 10px;
+}
+
+#register-section input {
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    display: block;
+}
+
+#register-section button {
+    padding: 10px 15px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#register-section button:hover {
+    background: #0056b3;
+}
+
+#account-settings {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+#change-account-btn {
+    padding: 10px 20px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#change-account-btn:hover {
+    background: #218838;
+}
+.info-message {
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px 15px;
+    background: linear-gradient(90deg, rgba(72,239,128,1) 0%, rgba(174,255,131,1) 100%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-in-out;
+}
+
+.info-message a {
+    color: #004d40;
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

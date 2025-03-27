@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игровая Биржа</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#register">Привет</a></li>
+                <li><a href="#games">Игры</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="logo">Игровая Биржа</div>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1 class="neon-text">Биржа — для торговли между игроками // 
+             Чтобы приобрести игровой аккаунт, переходите по ссылке ниже   
+            </h1>
+            <p class="sub-text">Удобно, безопасно, чтобы продать внутриигровые ценности.</p>
+        </section>
+
+        <section id="games">
+            <h2 class="neon-text">Популярные игры</h2>
+            <div class="games-list">
+                <div class="game">Steam</div>
+                <div class="game">Counter-Strike</div>
+                <div class="game">Dota</div>
+            </div>
+        </section>
+
+        <section id="news">
+            <h2 class="neon-text">Новости</h2>
+            <div class="news-container">
+                <article>
+                    <h3>Новое открытие!</h3>
+                    <p>Мы запустили наш сервис! Удобный и безопасный.</p>
+                </article>
+                <article>
+                    <h3>Обновления системы</h3>
+                    <p>Теперь мы поддерживаем больше игр и внутриигровых предметов.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Игровая Биржа. Все права защищены.</p>
+    </footer>
+
+    <script src="test.js"></script>
+</body>
+</html>
+<div class="games-list">
+    <div class="game">Steam</div>
+    <div class="game">Counter-Strike</div>
+    <div class="game">Dota</div>
+    <div class="game">Рандом 🔑 от Steam (от 500тг до 24000)</div>
+</div>
+
+<div id="account-section">
+    <h2>Аккаунты на продаже</h2>
+    <div class="account">
+        <h3>Steam Аккаунт #1</h3>
+        <p>Описание: Премиум аккаунт с редкими играми</p>
+        <p>Цена: 5000 тг</p>
+        <button onclick="buyAccount('Steam Аккаунт #1')">Купить</button>
+    </div>
+    <div class="account">
+        <h3>Steam Аккаунт #2</h3>
+        <p>Описание: 8 игр, Forza Horizon4, REPO, CsGo2,Gta5,</p>
+        <p>Цена: 3000 тг</p>
+        <button onclick="buyAccount('Steam Аккаунт #2')">Купить</button>
+    </div>
+</div>
+
+<div id="register-section">
+    <h2>Регистрация</h2>
+    <form id="register-form">
+        <input type="email" id="email" placeholder="Введите email" required>
+        <input type="text" id="nickname" placeholder="Введите никнейм" required>
+        <input type="password" id="password" placeholder="Введите пароль" required>
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+</div>
+
+<div id="account-settings" style="display: none;">
+    <button onclick="changeAccount()">Сменить аккаунт</button>
+</div>
+<div id="info-message" class="info-message">
+    Сайт ещё на ранней версии, поэтому направляем на <a href="https://t.me/+cykC6Cer8cxiZGUy" target="_blank">Telegram</a>
+</div>
